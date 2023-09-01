@@ -1,14 +1,52 @@
 {
-  "posts": [
-    { "id": 1, "title": "Post 1" },
-    { "id": 2, "title": "Post 2" },
-    { "id": 3, "title": "Post 3" }
+  "fromName": "User Basic Details",
+  "buttonTitle": "SUBMIT",
+  "formSeqNo": 1,
+  "isLast": false,
+  "fields": [
+      {
+          "name": "firstName",
+          "label": "First Name",
+          "type": "text",
+          "required": true
+      },
+      {
+        "name": "lastName",
+        "label": "Last Name",
+        "type": "text",
+        "required": true
+    },
+
+      {
+          "name": "dob",
+          "label": "Date Of Birth",
+          "type": "date"
+      },
+      
+      {
+          "name": "services",
+          "label": "Select Services",
+          "type": "checkbox",
+          "required":true,
+          "options": [
+              {
+                  "id": "passbook",
+                  "label": "Bank Passbook"
+              },
+              {
+                  "id": "mobileBanking",
+                  "label": "Mobile Banking"
+              },
+              {
+                  "id": "smsBanking",
+                  "label": "SMS Banking"
+              }
+          ]
+      }
+       
+        
+
+
   ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 },
-    { "id": 2, "body": "some comment", "postId": 1 }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  "formAction": "/submit/1"
 }
